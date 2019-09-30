@@ -5,11 +5,9 @@ import com.simahero.game.util.MouseHandler;
 
 import java.awt.*;
 
-public class PlayState extends GameStates {
-
-    public PlayState(GameStateManager gsm){
+public class PauseState extends GameStates {
+    public PauseState(GameStateManager gsm) {
         super(gsm);
-
     }
 
     @Override
@@ -20,13 +18,10 @@ public class PlayState extends GameStates {
     @Override
     public void input(MouseHandler mouse, KeyHandler key) {
 
-
     }
 
     @Override
     public void render(Graphics2D g) {
-        g.setColor(Color.RED);
-        g.fillRect(0, 0, 100, 100);
 
     }
 }
